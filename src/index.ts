@@ -25,16 +25,16 @@ export {
   WeaponEnhancementMaterial,
 } from "./types/client";
 
+export * as Create from "./create";
+
 export interface AuthPayload {
   token: string;
 }
 
 export interface InfoPayload {
-  [key: string]: string;
+  [key: string]: string | undefined;
   error?: string;
   info?: string;
   message?: string;
   resolution?: string;
 }
-
-export * as Create from "./create";
