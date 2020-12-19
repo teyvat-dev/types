@@ -1,4 +1,4 @@
-import { Prisma } from "../types/client";
+import { Prisma } from "./types/client";
 
 // Until this fixed https://github.com/microsoft/TypeScript/issues/13135
 // types must be renamed manually
