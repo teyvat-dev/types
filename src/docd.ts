@@ -167,6 +167,13 @@ export interface Character extends Client.Character, Defaults {
    * @real-type String
    */
   weapon: Client.Character["weapon"];
+  /**
+   * Id of the CharacterProfile that this character has
+   *
+   * @note Can be used to query the CharacterProfile entitity
+   * @real-type CUID String
+   */
+  characterProfileId: Client.Character["characterProfileId"];
 }
 
 /**
@@ -307,13 +314,6 @@ export interface CharacterProfile extends Client.CharacterProfile, Defaults {
    * @real-type JSON - TODO
    */
   voiceLines: Client.CharacterProfile["voiceLines"];
-  /**
-   * Id of the Character that this profile belongs to
-   *
-   * @note Can be used to query the Character entitity
-   * @real-type string
-   */
-  characterId: Client.CharacterProfile["characterId"];
   /**
    * Id of the region the Character belongs to
    *
@@ -819,6 +819,13 @@ export interface Me extends Client.User, Defaults {
    */
   username: Client.User["username"];
   /**
+   * SlimeColor assigned to your account
+   * This is assigned to you when you generate your token
+   *
+   * @real-type String
+   */
+  slimeColor: Client.User["slimeColor"];
+  /**
    * Email of your account
    *
    * @real-type String
@@ -1039,4 +1046,53 @@ export interface WeaponEnhancementMaterial
    * @real-type JSON - TODO
    */
   recipeUseId: Client.WeaponEnhancementMaterial["recipeUseId"];
+}
+
+/**
+ * @endpoints "[\"gadget\",\"gadgets\",\"filterGadgets\"]"
+ * @note unimplemented
+ */
+export interface Gadget extends Client.Gadget, Defaults {
+  /**
+   * Name of the Gadget
+   *
+   * @real-type String
+   */
+  name: Client.Gadget["name"];
+  /**
+   * Gadget icon URL
+   *
+   * @real-type String
+   */
+  icon: Client.Gadget["icon"];
+  /**
+   * Gadget effect description
+   *
+   * @real-type String
+   */
+  effect: Client.Gadget["effect"];
+  /**
+   * The crafting type of the Gadget eg. Alchemy
+   *
+   * @real-type String
+   */
+  craftingType: Client.Gadget["craftingType"];
+  /**
+   * How to obtain the Gadget
+   *
+   * @real-type String
+   */
+  source: Client.Gadget["source"];
+  /**
+   * Is the Gadget Reusable
+   *
+   * @real-type String (To change to Boolean)
+   */
+  reuseable: Client.Gadget["reuseable"];
+  /**
+   * JSON representation of the recipe used to make the gadget
+   *
+   * @real-type JSON - TODO
+   */
+  recipe: Client.Gadget["recipe"];
 }

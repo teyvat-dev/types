@@ -112,3 +112,5 @@ export type WeaponEnhancementMaterial = Prisma.WeaponEnhancementMaterialArgs &
   Prisma.WeaponAscensionMaterialWhereUniqueInput;
 export type WeaponEnhancementMaterials = Prisma.WeaponEnhancementMaterialArgs &
   Pick<Prisma.AggregateWeaponEnhancementMaterialArgs, PickableAggregateArgs>;
+
+export type Gadget = Prisma.GadgetArgs & Prisma.GadgetWhereUniqueInput;

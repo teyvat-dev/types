@@ -14,6 +14,7 @@ export {
   Domain,
   Element,
   ForgeRecipe,
+  Gadget,
   ProcessRecipe,
   Region,
   Talent,
@@ -23,4 +24,4 @@ export {
   WeaponAscension,
   WeaponAscensionMaterial,
   WeaponEnhancementMaterial,
-} from './types/client';
+} from "./types/client";

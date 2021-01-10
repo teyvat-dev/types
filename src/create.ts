@@ -18,6 +18,7 @@ export type CraftingMaterial = Prisma.CraftingMaterialCreateInput;
 export type Domain = Prisma.DomainCreateInput;
 export type Element = Prisma.ElementCreateInput;
 export type ForgeRecipe = Prisma.ForgeRecipeCreateInput;
+export type Gadget = Prisma.GadgetCreateInput;
 export type ProcessRecipe = Prisma.ProcessRecipeCreateInput;
 export type Region = Prisma.RegionCreateInput;
 export type Talent = Prisma.TalentCreateInput;
